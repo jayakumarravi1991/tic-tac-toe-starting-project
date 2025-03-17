@@ -32,6 +32,13 @@ Test
 - There is shared binary storage, when our author uploads an image, the image goes to our shared binary storage and when ever that assets is published then only it is available to our site visitor or publish instance.
 - There is also CDN or Load Balance in the front of our publish instance which will help us to balance the load and also provides us cache mechanism.
 
+## AEM Architecture Stack and order
+1. Apache Felix ( OSGI Java Container) - This container is used for moduler development and it provides varies functionalities in form of modules and components and services.
+2. Apache JackRabbit Oak ( JCR Repository / Storage Layer) - What ever content which authors add are stored in this repository. JCR is in the form or hierarchical structure.
+3. Apache Sling (Web Application Framework) - Rest based web application framework which helps in consuming and exposing content in your JCR repository. And also interacting with OSGI java container.
+4. AEM Application Layer - Where we find varies capabilities like sites, forms and assets
+
+
 AEM Sling
 
 AEM JCR
