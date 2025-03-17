@@ -39,7 +39,12 @@ Test
 4. AEM Application Layer - Where we find varies capabilities like sites, forms and assets
 
 
-AEM Sling
+## AEM Sling
+- Apache Sling is a framework for RESTful web-application based on an extensible content tree.
+- AEM is built using Sling, a Web application framework based on REST principles, that provides easy development of content-oriendted applications. 
+- Sling uses as JCR repository such as Apache Jackrabbit, or in the case of AEM, the CRX Content Repository, as its data store
+
+- 
 
 ## AEM JCR
 JCR is a database that looks like a file system. It is unstrucutred and enables versioning and observation. It provides services such as full-text search, indexing, access control and event monitoring. 
@@ -66,5 +71,9 @@ JCR is a database that looks like a file system. It is unstrucutred and enables 
 
 AEM OSGI
 
-AEM Dispatcher
+AEM Dispatcher:
+
+How Dispatcher returns Documents
+![image](https://github.com/user-attachments/assets/9366efe9-0f42-4401-ae39-87ccc5beb14b)
+
 
