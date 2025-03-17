@@ -41,7 +41,28 @@ Test
 
 AEM Sling
 
-AEM JCR
+## AEM JCR
+JCR is a database that looks like a file system. It is unstrucutred and enables versioning and observation. It provides services such as full-text search, indexing, access control and event monitoring. 
+- Content repository is way to store data in hierarchical format. 
+- In JCR content organization is done in repository model and hierarchical modeling.
+- Implemented by Apache Jackrabbit Oak
+- This JCR contains features of RDBMS and file system and top of that it has feature versionaning and full text search and indexing.
+
+### JCR Nodes and Properties
+- JCR is a tree structure that contains items:
+  - Nodes provide structure
+  - Properties store data
+- Item names should be meaningful. not recommended to use ID in JCR.
+- Item addresses are stored in the form of paths:
+  - /blog/jan/31/title
+  - blog/jan/1
+![image](https://github.com/user-attachments/assets/5d78a911-5d14-48a7-9e76-bab409586b09)
+- Parent Node > this node
+  - node type: nt:folder, nt:file, nt:structured, nt:nodeType, rep:User, rep:ACL
+  - mixin type: mix:versionable, mix:lockable, sling:VanityPath, cq:Taggable
+  - single value properties: value ( string long date path binary ...)
+  - multi-value properties: values[] (string long date path binary ...)
+  - child nodes
 
 AEM OSGI
 
